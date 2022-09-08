@@ -105,7 +105,7 @@ scene2.fromTo("#h2-4", { y: 700 }, { y: 0 }, 0.2);
 scene2.fromTo("#h2-5", { y: 800 }, { y: 0 }, 0.3);
 scene2.fromTo("#h2-6", { y: 900 }, { y: 0 }, 0.3);
 
-/* Bats */
+/* Bats 
 gsap.fromTo(
 	"#bats",
 	{ opacity: 1, y: 400, scale: 0 },
@@ -139,7 +139,7 @@ gsap.fromTo(
 	}
 );
 
-/* Sun increase */
+/* Sun increase 
 let sun2 = gsap.timeline();
 ScrollTrigger.create({
 	animation: sun2,
@@ -156,7 +156,7 @@ sun2.to("#lg4 stop:nth-child(1)", { attr: { "stop-color": "#623951" } }, 0);
 sun2.to("#lg4 stop:nth-child(2)", { attr: { "stop-color": "#261F36" } }, 0);
 sun2.to("#bg_grad stop:nth-child(6)", { attr: { "stop-color": "#45224A" } }, 0);
 
-/* Transition (from Scene2 to Scene3) */
+/* Transition (from Scene2 to Scene3) 
 gsap.set("#scene3", { y: 580, visibility: "visible" });
 let sceneTransition = gsap.timeline();
 ScrollTrigger.create({
@@ -175,7 +175,7 @@ sceneTransition.to(
 sceneTransition.to("#bg_grad", { attr: { cy: "-80" } }, 0.0);
 sceneTransition.to("#bg2", { y: 0 }, 0);
 
-/* Scene 3 */
+/* Scene 3 
 let scene3 = gsap.timeline();
 ScrollTrigger.create({
 	animation: scene3,
@@ -203,7 +203,7 @@ scene3.fromTo("#text2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.3);
 scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0);
 scene3.to("#bg2-grad", { attr: { r: 500 } }, 0);
 
-/*   falling star   */
+/*   falling star   
 gsap.to("#fstar", {
 	x: -700,
 	y: -250,
@@ -240,4 +240,4 @@ fsEnter.addEventListener("click", function (e) {
 		document.exitFullscreen();
 		fsEnter.innerHTML = "Go Fullscreen";
 	}
-});
+});*/
